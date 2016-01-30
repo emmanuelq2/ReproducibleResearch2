@@ -1,7 +1,7 @@
 ---
 title: "Severe weather events like tornadoes and floods cause both extreme public health and economic problems"
 author: "emmanuelq2"
-date: "2016-01-30 15:38:41"
+date: "2016-01-30 16:49:32"
 output: html_document
 ---
 
@@ -401,7 +401,7 @@ ggplot(data = Fatalities, aes(x = EVTYPE, y = FATALITIES)) +
   ggtitle("Events that have caused the highest numbers of fatalities")
 ```
 
-![](assignment3final_files/figure-html/unnamed-chunk-18-1.png) 
+![](ReproducibleResearch2_files/figure-html/unnamed-chunk-18-1.png) 
 
 Among the 15145 fatalities, tornadoes have caused **5633** deaths.
 
@@ -421,7 +421,7 @@ ggplot(data = Injuries, aes(x = EVTYPE, y = INJURIES)) +
   ggtitle("Events that have caused the highest number of injuries")
 ```
 
-![](assignment3final_files/figure-html/unnamed-chunk-19-1.png) 
+![](ReproducibleResearch2_files/figure-html/unnamed-chunk-19-1.png) 
 
 Among the 140528 injuries, tornadoes were the first cause with **9.1346\times 10^{4}** persons hurt.
 
@@ -524,7 +524,7 @@ print(d2, vp = viewport(layout.pos.row = 1, layout.pos.col = 2))
 ## Don't know how to automatically pick scale for object of type AsIs. Defaulting to continuous
 ```
 
-![](assignment3final_files/figure-html/unnamed-chunk-22-1.png) 
+![](ReproducibleResearch2_files/figure-html/unnamed-chunk-22-1.png) 
 
 **Beware**: the scale for each plot is different. The right panel for Crop Damage costs starts from 10^9 whereas the left panel begins with 10^10 value. That is is the meaning of the warning *("Don't know how to automatically pick scale for object of type AsIs. Defaulting to continuous")* when calling the print function.
 The idea of making a side-by-side plot though relevant here may be risky for interpretation. But we can better compare events that occur more frequently for the two types of damages than figures. For instance, we observe that flood cause more damage costs (145 US$ billions) for properties but come second regarding the crop damages and represents half of the highest event that is Drought (12.5 US$ billions).
